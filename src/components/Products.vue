@@ -1,4 +1,5 @@
 <script>
+import imagenes from "./Img.vue";
 import grid from "./Grid.vue";
 export default {
     props: {
@@ -15,13 +16,15 @@ export default {
             String
         },
     },
-    components: { grid }
+    components: { grid, imagenes }
 };
 </script>
     
 <template>
     <grid>
-        <img v-bind:src="url" alt="Vue.js">
+        <imagenes>
+            <img v-bind:src="url" alt="Vue.js">
+        </imagenes>
         <h2>{{nombre}}</h2>
         <p>{{precio}}</p>
         <p>{{descripcion}}</p>
@@ -29,12 +32,6 @@ export default {
 </template>
     
 <style scoped>
-img {
-    width: 17.5rem;
-    height: 17.5rem;
-    padding: 1rem;
-    background: snow;
-}
 
 a {
     text-decoration: none;
