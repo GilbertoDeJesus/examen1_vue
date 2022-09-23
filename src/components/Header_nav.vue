@@ -20,7 +20,8 @@ export default {
 
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pl-8 pr-8">
+        <div class="fixed-top bg-primary px-4 text-white text-center"><p>{{nombreEmpresa}}<strong> | Telefono para pedidos: 952 03 99 50</strong></p></div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pl-8 pr-8 mt-4">
             <a class="navbar-brand" href="#">
                 <img v-bind:src="url" width="40" height="40" alt="Logo"> {{nombreEmpresa}}
             </a>
@@ -32,19 +33,19 @@ export default {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <span class="text-dark pr-4">{{nombreAlumno}} <strong>{{grupo}}</strong></span>
                 <ul class="navbar-nav nav-pills mr-auto">
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 mb-1">
                         <a class="nav-link active text-white" href="#">ENSALADAS</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 mb-1">
                         <a class="nav-link active text-white" href="#">ARROCES</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 mb-1">
                         <a class="nav-link active text-white" href="#">PESCADOS</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 mb-1">
                         <a class="nav-link active text-white" href="#">CARNES</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 mb-1">
                         <a class="nav-link active text-white" href="#">POSTRES</a>
                     </li>
                 </ul>
